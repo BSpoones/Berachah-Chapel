@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/global.css">
+        <!-- Importing the needed files for the nav bar to work -->
+        <link rel="stylesheet" href="css/gloval nav.css">
+        <script src="js/global nav.js"></script>
+        <!-- Sets the browser tab icon to be the company logo -->
+        <link rel="icon" href="assets/icon.png" sizes="16x16">
+        <style>
+            /* 
+            Used for the scrolling header image
+            Placed here instead of in css file because the image changes in each page
+            */
+            body, html {
+                height: 100%;
+                scroll-behavior: smooth;
+            }
+            .header {
+                /* Creates a full page header image */
+                background: url(assets/Local\ area\ background.jpg) fixed center center no-repeat;
+                height: 100vh;
+                width: 100vw;
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            /* Ensures the website looks the same on smaller devices */
+            @media only screen and (max-device-width: 1366px) {
+                .header {
+                    background-attachment: scroll;
+                }
+            }
+        </style>
+    </head>
+    <title>Beracach Chapel | Local Area</title>
+    <body>
+        div class="gloal-nav">
+            <!-- This div is used in each page and has all elements for a navigation bar-->
+            <div class="top-bar">
+                <!-- All elements on the top bar -->
+                <div class="openbtn">
+                    <img
+                        clas="openbtn"
+                        src="assets/white hamburger.png"
+                        alt="Open Menu"
+                        height ="36"
+                        width = "36"
+                        onmouseover="blueHamburger(this)"
+                        onmouseout="whiteHamburger(this)"
+                        onclick="openNav()"
+                        >
+                    <!-- Top logo also linking to homepage -->
+                    <div class="top-logo">
+                        <a href="#"><img src="assets/flat logo.png" alt="Home" height="50px" width="330px"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- This div contains all the elements for the dissapearing side bar -->
+            <div id="sidenav" class="sidenav">
+                <div>
+                    <img 
+                        class="closebtn"
+                        src="assets/white hamburger.png"
+                        alt="Close Menu"
+                        height="36"
+                        width="36"
+                        onmouseover="blueHamburger(this)"
+                        onmouseout="whiteHamburger(this)"
+                        onclick="closeNav()"
+                        >
+                </div>
+                <div class="items">
+                    <div class="top">
+                        <a href="Home.html">Home</a>
+                        <a href="About us.html">About the Chapel</a>
+                        <a href="Gallery.html">Gallery</a>
+                        <a href="Local area.html">Local area</a>
+                        <a href="Booking.html">Booking</a>
+                    </div>
+                    <div class="bottom">
+                        <a href="http://soones.com">Soones 2021</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- This div contains all the elements in the main section of the page -->
+        <div id="main">
+            <!-- This div is used for the full page header image -->
+            <div class="header">
+                <div class="caption">
+                    <span class="border"><font style="vertical-align: inherit;">LOCAL AREA</font></span>
+                </div>
+                <!-- Button to scroll down to content -->
+                <div class="scrolldown">
+                    <span class="border"></span><a href="#content" style="text-align: center;"><img src="assets/scroll button.png"></a></span>
+                </div>
+            </div>
+            <div class="content" id="content">
+                <div class="outer-box">
+                    <h2>Local area</h2>
+                    <hr style="width: 70vw">
+                    <div class="container">
+                        <!-- Simple iframe linking to a custom made google maps embed showing the local area -->
+                        <iframe src="https://www.google.com/maps/d/embed?mid=1nYPvr7SNv4_XApv4DbVm1bYJLP3Jm5Kx" width="100%" style="height:80vh"></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- Used in each webpage to give a link to Soones.com -->
+            <div class="global-footer">
+                <br><br><br>
+                <span class="border"><a href="http://www.soones.com/" target="_blank">Soones 2021</a></span>
+                <br><br>
+            </div>
+        </div>
+    </body>
+</html>

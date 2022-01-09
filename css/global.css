@@ -1,0 +1,160 @@
+/* Sets global background to be geometric, made with https://trianglify.io/ */
+
+html {
+  background: url(../assets/background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+body {
+  margin:0; /* Prevents bars from appearing on the left and right */
+}
+
+/* Global footer */
+
+.global-footer {
+  width: 100%;
+  display: block;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* Border around global footer */
+
+.global-footer span.border {
+  background-color: #242424;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+.global-footer a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Creates white box */
+
+.content {
+  font-family: sans-serif;
+  font-size: 130%;
+  margin: auto;
+  width: 80%;
+  padding: 5px;
+  background-color: white;
+  display: flex;
+  position: auto;
+  justify-content: center;
+}
+
+.outer-box {
+  text-align: center;
+}
+
+.header span {
+  display: flex;
+  text-shadow: #242424;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* Ensures each row formats correctly */
+
+.content-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Header caption */
+
+.caption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: auto;
+  height: auto;
+  text-align: center;
+  color: #000;
+  transform: translate(-50%, -50%)
+}
+
+.caption span.border {
+  background-color: #242424;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 6px;
+}
+
+/* Header scrolldown button */
+
+.scrolldown {
+  position: absolute;
+  justify-content: center;
+  left: 50%;
+  bottom: 0%;
+  width: auto;
+  height: auto;
+  text-align: center;
+  color: #000;
+  transform: translate(-55%, -50%)
+}
+
+.scrolldown img {
+  width: 5vw;
+  height: auto;
+}
+
+/* Adds white space on left and right of content box */
+.container {
+  padding: 64px;
+  width: 70vw;
+  position: inherit;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+
+
+/* Zig-zag layout */
+
+.column-66 {
+  float: left;
+  width: 60%;
+  padding: 20px;
+}
+
+.column-33 {
+  background-color: rgba(36, 36, 36);
+  color: white;
+  float: left;
+  width: 30%;
+  text-align: center;
+}
+
+.column-33 img {
+  width: 100%
+}
+
+
+/* Ensure page looks correct on small devices */
+
+@media screen and (max-width: 1150px) {
+  .column-66,
+  .column-33 {
+      width: 100%;
+      text-align: left;
+  }
+  .container img {
+      margin: auto;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}

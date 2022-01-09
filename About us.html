@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/global.css">
+        <!-- Importing the needed files for the nav bar to work -->
+        <link rel="stylesheet" href="css/gloval nav.css">
+        <script src="js/global nav.js"></script>
+        <!-- Sets the browser tab icon to be the company logo -->
+        <link rel="icon" href="assets/icon.png" sizes="16x16">
+        <style>
+            /* 
+            Used for the scrolling header image
+            Placed here instead of in css file because the image changes in each page
+            */
+            .header {
+                /* Creates a full page header image */
+                background: url(assets/About\ us\ background.jpg) fixed center center no-repeat;
+                height: 100vh;
+                width: 100vw;
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            /* Ensures the website looks the same on smaller devices */
+            @media only screen and (max-device-width: 1366px) {
+                .header {
+                    background-attachment: scroll;
+                }
+            }
+        </style>
+    </head>
+    <title>Beracach Chapel | About</title>
+    <body>
+        <div class="gloal-nav">
+        <!-- This div is used in each page and has all elements for a navigation bar-->
+        <div class="top-bar">
+            <!-- All elements on the top bar -->
+            <div class="openbtn">
+                <img
+                    clas="openbtn"
+                    src="assets/white hamburger.png"
+                    alt="Open Menu"
+                    height ="36"
+                    width = "36"
+                    onmouseover="blueHamburger(this)"
+                    onmouseout="whiteHamburger(this)"
+                    onclick="openNav()"
+                    >
+            </div>
+            <!-- Top logo also linking to homepage -->
+            <div class="top-logo">
+                <a href="Home.html"><img src="assets/flat logo.png" alt="Home" height="50px" width="330px"></a>
+            </div>
+            <!-- This div contains all the elements for the dissapearing side bar -->
+            <div id="sidenav" class="sidenav">
+                <div>
+                    <img 
+                        class="closebtn"
+                        src="assets/white hamburger.png"
+                        alt="Close Menu"
+                        height="36"
+                        width="36"
+                        onmouseover="blueHamburger(this)"
+                        onmouseout="whiteHamburger(this)"
+                        onclick="closeNav()"
+                        >
+                </div>
+                <div class="items">
+                    <div class="top">
+                        <a href="Home.html">Home</a>
+                        <a href="About us.html">About the Chapel</a>
+                        <a href="Gallery.html">Gallery</a>
+                        <a href="Local area.html">Local area</a>
+                        <a href="Booking.html">Booking</a>
+                    </div>
+                    <div class="bottom">
+                        <a href="http://soones.com">Soones 2021</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- This div contains all the elements in the main section of the page -->
+        <div id="main">
+            <!-- This div is used for the full page header image -->
+            <div class="header">
+                <div class="caption">
+                    <span class="border"><font style="vertical-align: inherit;">ABOUT THE CHAPEL</font></span>
+                </div>
+                <!-- Button to scroll down to content -->
+                <div class="scrolldown">
+                    <span class="border"></span><a href="#content" style="text-align: center;"><img src="assets/scroll button.png"></a></span>
+                </div>
+            </div>
+            <!-- The white box where page contents are placed -->
+            <div class="content" id="content">
+                <div class="outer-box">
+                    <h2>About the Chapel</h2>
+                    <hr style="width: 70vw;">
+                    <div class="container">
+                        <!-- Used to make a row of zig-zag elements -->
+                        <div class="content-row">
+                            <div class="column-66" style="float:left">
+                                <h3>History</h3>
+                                <p>
+                                    After the <a href="https://en.wikipedia.org/wiki/Battle_of_Fishguard" target="_blank">Battle of Fishguard</a> and the subsiquent
+                                    French surrender in 1797, there was an anual thanksgiving for the deliverance of 1,360 French soldiers. The location for this
+                                    thanksgiving was at the spot where they laid down their arms, later named as Berachah, the valley of blessing.
+                                </p>
+                                <p>
+                                    Around thirty years later, Calvinistic Methodists constructed a chapel on the hill above with the same name. The chapel was built
+                                    in 1830 and was restored in 1906. The current chapel (1906) was designed by William Jones of Ton Pentre, in a classical style
+                                    with a gable-entry plan and two storeys at a cost of £1,700 (or over £211,000 in today's money!).
+                                </p>
+                            </div>
+                            <div class="column-33" style="float:right">
+                                <img src="assets/Battle of Fishguard.jpeg">
+                                <p>An image of the Battle of Fishguard (1797)</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="content-row" >
+                            <div class="column-33" style="float:left;">
+                                <img src="assets/Interior photo.jpg">
+                                <p>An image of the interior of the Chapel</p>
+                            </div>
+                            <div class="column-66" style="float:left;">
+                                <h3>Chapel information</h3>
+                                <p>
+                                    Berachah Chapel is a grade 2 listed religous building on the North side of New Hill some 85m from its junction with Station Hill.
+                                </p>
+                                <p>
+                                    The Chapel consists of two connected buildings, the chapel room and a reception room. The Chapel room has:
+                                <ul>
+                                    <li>2 stories with over 50 pews.</li>
+                                    <li>A boarded three-sided ceiling in 5 bays with ribs off corbels.</li>
+                                    <li>Five pierced timber round vents.</li>
+                                    <li>A three-sided gallery with canted angles on 7 Corinthian cast-iron columns, part-fluted.</li>
+                                    <li> Gallery front in pitch pine has cornice under long panels. Pews in 3 blocks, the side ones *canted, some inward-facing each side of pulpit.</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="content-row">
+                            <div class="column-66">
+                                <h3>Exterior information</h3>
+                                <p>The exterior of Berachah Chapel consists of rock-faced coursed brown stone with grey sandstone ashlar dressings, with a roof made of red terracotta ridge
+                                    tiles. The first floor has a palladian window with a keystone, with an enscription of "Methodistiaid Adeiladwyd 1830" on the left and "Calfinaidd 
+                                    Ailadeilawyd 1906".
+                                </p>
+                            </div>
+                            <div class="column-33" style="float:right">
+                                <img src="assets/Exterior photo.jpg">
+                                <p>An image of Berachah Chapel (2019)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Used in each webpage to give a link to Soones.com -->
+            <div class="global-footer">
+                <br><br><br>
+                <span class="border"><a href="http://www.soones.com/" target="_blank">Soones 2021</a></span>
+                <br><br>
+            </div>
+        </div>
+    </body>
+</html>

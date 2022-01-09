@@ -1,0 +1,54 @@
+.booking {
+    width:60%;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    }
+    div.elem-group {
+    margin: 20px 0;
+    padding-top:10px;
+    }
+    .inlined {
+    width: 49%;
+    float: left;
+    margin-left: 1%;
+    }
+    label {
+    display: block;
+    padding-bottom: 10px;
+    font-size: 1.25em;
+    }
+    input, select, textarea {
+    border-radius: 2px;
+    border: 2px solid #777;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    width: 100%;
+    padding: 10px;
+    }
+    div.elem-group.inlined input {
+    width: 95%;
+    display: inline-block;
+    }
+    textarea {
+    height: 100px;
+    }
+    button {
+    height: 50px;
+    background: rgb(24,24,24);
+    border: none;
+    color: white;
+    font-size: 1.25em;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    button:hover {
+    background-color: #0c6f7c;
+    }
+    @media screen and (max-width: 1150px) {
+    .inlined {
+    width: 100%;
+    float:none;
+    margin-left: 0;
+    }
+    }

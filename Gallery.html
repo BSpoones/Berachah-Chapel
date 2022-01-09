@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/global.css">
+        <!-- Importing the needed files for the nav bar to work -->
+        <link rel="stylesheet" href="css/gloval nav.css">
+        <script src="js/global nav.js"></script>
+        <script src="js/gallery.js"></script>
+        <!-- Sets the browser tab icon to be the company logo -->
+        <link rel="icon" href="assets/icon.png" sizes="16x16">
+        <link rel="stylesheet" href="css/gallery.css">
+        <style>
+            /* 
+            Used for the scrolling header image
+            Placed here instead of in css file because the image changes in each page
+            */
+            body, html {
+                height: 100%;
+                width: 100%;
+            
+            }
+            .header {
+                /* Creates a full page header image */
+                background: url(assets/gallery\ background.jpg) fixed center center no-repeat;
+                height: 100vh;
+                width: 100%;
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            @media only screen and (max-device-width: 1366px) {
+                .header {
+                    background-attachment: scroll;
+                }
+            }
+        </style>
+    </head>
+    <title>Beracach Chapel | Gallery</title>
+    <body>
+        <div class="gloal-nav">
+        <!-- This div is used in each page and has all elements for a navigation bar-->
+        <div class="top-bar">
+            <!-- All elements on the top bar -->
+            <div class="openbtn">
+                <img
+                    clas="openbtn"
+                    src="assets/white hamburger.png"
+                    alt="Open Menu"
+                    height ="36"
+                    width = "36"
+                    onmouseover="blueHamburger(this)"
+                    onmouseout="whiteHamburger(this)"
+                    onclick="openNav()"
+                    >
+            </div>
+            <!-- Top logo also linking to homepage -->
+            <div class="top-logo">
+                <a href="Home.html"><img src="assets/flat logo.png" alt="Home" height="50px" width="330px"></a>
+            </div>
+            <!-- This div contains all the elements for the dissapearing side bar -->
+            <div id="sidenav" class="sidenav">
+                <div>
+                    <img 
+                        class="closebtn"
+                        src="assets/white hamburger.png"
+                        alt="Close Menu"
+                        height="36"
+                        width="36"
+                        onmouseover="blueHamburger(this)"
+                        onmouseout="whiteHamburger(this)"
+                        onclick="closeNav()"
+                        >
+                </div>
+                <div class="items">
+                    <div class="top">
+                        <a href="Home.html">Home</a>
+                        <a href="About us.html">About the Chapel</a>
+                        <a href="Gallery.html">Gallery</a>
+                        <a href="Local area.html">Local area</a>
+                        <a href="Booking.html">Booking</a>
+                    </div>
+                    <div class="bottom">
+                        <a href="http://soones.com">Soones 2021</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- This div contains all the elements in the main section of the page -->
+        <div id="main"></div>
+            <!-- This div is used for the full page header image -->
+            <div class="header">
+                <div class="caption">
+                    <span class="border"><font style="vertical-align: inherit;">GALLERY</font></span>
+                </div>
+                <!-- Button to scroll down to content -->
+                <div class="scrolldown">
+                    <span class="border"></span><a href="#content" style="text-align: center;"><img src="assets/scroll button.png"></a></span>
+                </div>
+            </div>
+            <div class="content" id="content">
+                <div>
+                    <div class="outer-box">
+                        <h2>Gallery</h2>
+                        <hr style="width: 70vw;">
+                    </div>
+                    <div class="container">
+                        <h3>Gallery</h3>
+                        <p>
+                            Here is a slideshow showing images of the interior of the Chapel, including new modifications to the reception area.
+                        </p>
+                        <!-- Slideshow showing all interior iamges of Beracach Chapel -->
+                        <div class="slideshow-container">
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 17</div>
+                                <img src="assets/20190622_120341.jpg">
+                                <div class="text">Left side of Chapel, Ground floor</div>
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 17</div>
+                                <img src="assets/20190622_120612.jpg">
+                                <div class="text">Stairway leading to second floor</div>
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 17</div>
+                                <img src="assets/20191005_170357.jpg">
+                                <div class="text">Altar</div>
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">4 / 17</div>
+                                <img src="assets/20191005_170405.jpg">
+                                <div class="text">Cross above altar</div>
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">5 / 17</div>
+                                <img src="assets/20191005_170626.jpg">
+                                <div class="text">Bookcase by Chapel enterance</div>
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">6 / 17</div>
+                                <img src="assets/20191005_170712.jpg">
+                                <div class="text">Bookcase by Chapel enterance</div>
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">7 / 17</div>
+                                <img src="assets/20191005_170842.jpg">
+                                <div class="text">View of Chapel from second floor</div>
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">8 / 17</div>
+                                <img src="assets/20191005_171003.jpg">
+                                <div class="text">Centre pews on ground floor</div>
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">9 / 17</div>
+                                <img src="assets/20191005_172355.jpg">
+                                <div class="text">Sitting area in reception</div>
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">10 / 17</div>
+                                <img src="assets/20191005_172359.jpg">
+                                <div class="text">Sitting area in reception</div>
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">11 / 17</div>
+                                <img src="assets/20200801_213639.jpg">
+                                <div class="text">Sitting area in reception</div>
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">12 / 17</div>
+                                <img src="assets/20200801_213659.jpg">
+                                <div class="text">Sitting area in reception</div>
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">13 / 17</div>
+                                <img src="assets/20200801_213712.jpg">
+                                <div class="text">Altar at night</div>
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">14 / 17</div>
+                                <img src="assets/20200801_213721.jpg">
+                                <div class="text">Central pews at night</div>
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">15 / 17</div>
+                                <img src="assets/20200801_213730.jpg">
+                                <div class="text">Central pews at night</div>
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">16 / 17</div>
+                                <img src="assets/20200801_213735.jpg">
+                                <div class="text">Central pews at night</div>
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">17 / 17</div>
+                                <img src="assets/20200801_213806.jpg">
+                                <div class="text">Altar at night</div>
+                            </div>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Used in each webpage to give a link to Soones.com -->
+            <div class="global-footer">
+                <br><br><br>
+                <span class="border"><a href="http://www.soones.com/" target="_blank">Soones 2021</a></span>
+                <br><br>
+            </div>
+        </div>
+        <script src="js/gallery.js"></script>
+    </body>
+</html>
